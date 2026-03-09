@@ -275,6 +275,10 @@ Phony.define do
           match(/^(2\d)\d{8}$/) >> split(2, 3, 3) |
           match(/^(800)\d{6}$/) >> split(3, 3)   | # International 800 service where agreed
           match(/^(800)\d{7}$/) >> split(3, 4)   | # International 800 service where agreed
+          match(/^(508)\d{6}$/) >> split(3, 3)   | # Toll-free 0508
+          match(/^(508)\d{7}$/) >> split(3, 4)   | # Toll-free 0508
+          match(/^(900)\d{5}$/) >> split(3, 2)   | # Premium rate 0900
+          match(/^(900)\d{6}$/) >> split(3, 3)   | # Premium rate 0900
           fixed(1) >> split(3, 4)                  # Rest
 
   # Singapore (Republic of).
