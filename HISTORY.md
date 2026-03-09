@@ -1,3 +1,7 @@
+# Version 3.0.3
+
+* New Zealand (#561) 
+
 # Version 3.0.2
 
 * Liberia (#560)
