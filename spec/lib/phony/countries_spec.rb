@@ -947,6 +947,10 @@ describe 'country descriptions' do
       it_splits '6491234567', %w[64 9 123 4567]
       it_splits '64800123123', %w[64 800 123 123]
       it_splits '648001231234', %w[64 800 123 1234]
+      it_splits '64508123123', %w[64 508 123 123]     # Toll-free 0508
+      it_splits '645081231234', %w[64 508 123 1234]   # Toll-free 0508
+      it_splits '6490012345', %w[64 900 123 45]       # Premium 0900 (5 digits)
+      it_splits '64900123456', %w[64 900 123 456]     # Premium 0900 (6 digits)
     end
 
     describe 'Bhutan (Kingdom of)' do
