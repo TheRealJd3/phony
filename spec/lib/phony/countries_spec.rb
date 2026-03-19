@@ -954,7 +954,10 @@ describe 'country descriptions' do
     end
 
     describe 'Bhutan (Kingdom of)' do
-      it_splits '9759723642', %w[975 9 723 642]
+      it_splits '9752972364', %w(975 2 972 364)
+      it_splits '97516297236', %w(975 16 297 236)
+      it_splits '97517297236', %w(975 17 297 236)
+      it_splits '97577297236', %w(975 77 297 236)
     end
 
     describe 'Brunei Darussalam' do
