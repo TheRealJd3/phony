@@ -228,7 +228,18 @@ NDC with several subscriber number length.
 
 #### Bhutan
 
-    plausible? true: '+975 2 889 648'
+https://en.wikipedia.org/wiki/Telephone_numbers_in_Bhutan
+
+    Phony.assert.plausible?("+975 2 889 648") # Landline
+    Phony.assert.plausible?("+975 17 889 648") # B-Mobile
+    Phony.assert.plausible?("+975 16 889 648") # B-Mobile
+    Phony.assert.plausible?("+975 77 889 648") # TashiCell
+
+    Phony.refute.plausible?("+975 77 889 6489") # B-Mobile (too long)
+    Phony.refute.plausible?("+975 77 889 64") # B-Mobile (too short)
+    Phony.refute.plausible?("+975 3 889 648") # Not a landline
+    Phony.refute.plausible?("+975 2 889 64") # Landline too short
+    Phony.refute.plausible?("+975 2 889 6489") # Landline too long
 
 #### Bolivia
 
