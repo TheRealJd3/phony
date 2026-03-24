@@ -1,6 +1,10 @@
+# Version 3.0.4
+
+* Bhutan (#563) 
+
 # Version 3.0.3
 
-* New Zealand (#561) 
+* New Zealand (#561)
 
 # Version 3.0.2
 
