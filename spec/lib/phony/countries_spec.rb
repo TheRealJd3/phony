@@ -179,6 +179,7 @@ describe 'country descriptions' do
 
       context 'with special numbers' do
         it_splits '5508002221234', %w[55 0800 222 1234]
+        it_splits '558002221234', %w[55 800 222 1234]
         it_splits '5530032221', %w[55 3003 2221]
         it_splits '5540209999', %w[55 4020 9999]
         it_splits '5540038999', %w[55 4003 8999]

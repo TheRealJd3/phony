@@ -50,13 +50,15 @@ describe 'plausibility' do
                                                             '+387 60 3456789',
                                                             '+387 64 4123456',
                                                             '+387 67 1234567']
-      it 'is correct for Brasil' do
+      it 'is correct for Brazil' do
         expect(Phony).to be_plausible('+55 67 998280912')
         expect(Phony).not_to be_plausible('+55 67 98280912')
         expect(Phony).not_to be_plausible('+55 11 12345678')
         expect(Phony).not_to be_plausible('+55 11 123456789')
         expect(Phony).not_to be_plausible('+55 11 023456789')
         expect(Phony).to be_plausible('+55 11 22345678')
+        expect(Phony).to be_plausible('+55 0800 123 4567')
+        expect(Phony).to be_plausible('+55 800 123 4567')
       end
 
       it 'is correct for Bulgaria' do
