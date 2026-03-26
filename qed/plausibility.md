@@ -256,6 +256,11 @@ https://en.wikipedia.org/wiki/Telephone_numbers_in_Bhutan
       '+267 8 1234 567'
     ]
 
+#### Brazil
+
+    plausible? true: '+55 0800 123 4567'
+    plausible? true: '+55 800 123 4567'
+
 #### Brunei
 
     plausible? true: '+673 5 523 876'
