@@ -1,6 +1,10 @@
+# Version 3.0.5
+
+* Brazil (#565)
+
 # Version 3.0.4
 
-* Bhutan (#563) 
+* Bhutan (#563)
 
 # Version 3.0.3
 
