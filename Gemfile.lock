@@ -17,7 +17,6 @@ GEM
     parser (3.3.8.0)
       ast (~> 2.4.1)
       racc
-    pippi (0.0.14)
     prism (1.4.0)
     qed (2.9.2)
       ansi
@@ -85,7 +84,7 @@ GEM
     unicode-emoji (4.0.4)
 
 PLATFORMS
-  arm64-darwin-23
+  arm64-darwin
   ruby
 
 DEPENDENCIES
