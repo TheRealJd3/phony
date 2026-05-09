@@ -1,3 +1,7 @@
+# Version 3.0.6
+
+* Nigeria (#567)
+
 # Version 3.0.5
 
 * Brazil (#565)

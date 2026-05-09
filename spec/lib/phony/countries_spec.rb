@@ -1298,7 +1298,8 @@ describe 'country descriptions' do
     end
 
     describe 'Nigeria' do
-      it_splits '23411231234', %w[234 1 123 1234] # Lagos
+      it_splits '23411231234', %w[234 1 123 1234]
+      it_splits '23421231234', %w[234 2 123 1234]
 
       it_splits '23420123456', %w[234 20 123 456] # Area code 20 (7 digits)
       it_splits '234201234567', %w[234 20 123 4567] # Area code 20 (8 digits)
